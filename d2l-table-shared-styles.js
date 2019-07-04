@@ -73,6 +73,27 @@ $_documentContainer.innerHTML = `<custom-style>
 				display:table-row;
 			}
 		}
+		html[d2l-color-scheme="dark"] {
+			--d2l-table-body-background-color: var(--d2l-color-dark-mode-2);
+			--d2l-table-header-background-color: var(--d2l-color-dark-mode-1);
+			--d2l-table-border-color: var(--d2l-color-dark-mode-3);
+			--d2l-table-header: {
+				color:var(--d2l-color-regolith);
+				font-size:.7rem;
+				line-height:1rem;
+				margin:1rem 0;
+				padding: 0.5rem 1rem;
+				height: 27px; /* min-height to be 48px including border */
+			}
+			--d2l-table-light-header: {
+				color: var(--d2l-color-regolith);
+				font-size: 0.7rem;
+				font-weight: normal;
+				line-height: 1rem;
+				padding: 0.6rem;
+				height: 1.15rem; /* min-height to be 48px including border */
+			}
+		}
 	</style>
 </custom-style>`;
 

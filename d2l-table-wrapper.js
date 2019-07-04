@@ -133,6 +133,10 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-table-wrapper">
 				--d2l-table-header-background-color: var(--d2l-color-regolith);
 				--d2l-table-border-overflow: dashed 1px #d3d9e3;
 			}
+			:host-context([d2l-color-scheme="dark"]) {
+				--d2l-table-header-background-color: var(--d2l-color-dark-mode-1);
+				--d2l-table-border-color: var(--d2l-color-dark-mode-3);
+			}
 			d2l-scroll-wrapper {
 				--d2l-scroll-wrapper-h-scroll: {
 					border-left: var(--d2l-table-border-overflow);
@@ -156,7 +160,7 @@ $_documentContainer.innerHTML = `<dom-module id="d2l-table-wrapper">
 			<slot id="slot"></slot>
 		</d2l-scroll-wrapper>
 	</template>
-	
+
 </dom-module>`;
 
 document.head.appendChild($_documentContainer.content);
